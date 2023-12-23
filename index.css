@@ -119,6 +119,44 @@ header .action-bar .action-name{
 
 
 
+/* main section styling starts here......................................................................... */
+
+main .banner-container{
+    margin: 4rem 0rem;
+}
+
+main .banner-container img{
+    width: 100%;
+}
+
+main .category-heading{
+    color: #3e4152;
+    font-size: 2.88rem;
+    letter-spacing: 0.43rem;
+    font-weight: 700;
+    margin: 3.5rem 0 1.1rem 2.3rem;
+}
+
+main .category-items{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+main .category-items .sale-item{
+    width: 25rem;
+    margin: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (min-width: 769px) and (max-width:991px){
