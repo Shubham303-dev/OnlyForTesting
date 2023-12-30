@@ -1,0 +1,228 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+html{
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body{
+  background-color: black;
+  color: white;
+}
+
+
+/* Navigation Part styling start here............................................................ */
+
+header{
+  font-size: 2rem;
+}
+
+header .main-nav{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(170, 163, 163, 0.1);
+  position: fixed;
+  color: dimgray;
+}
+
+header .main-nav .logo{
+  margin-right: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 4%;
+}
+
+.logo a span{
+  color: rgb(221, 43, 43);
+}
+.logo a{
+  text-decoration: none;
+  font-size: 5rem;
+}
+
+header .main-nav .nav{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+  margin-right: 4%;
+}
+
+header .main-nav .nav ul{
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+header .main-nav .nav ul li{
+  margin-left: 30px;
+}
+
+header .main-nav a{
+  text-decoration: none;
+  color: dimgray;
+}
+
+header .main-nav .nav ul li a{
+  
+  padding: 15% 0;
+}
+
+header .main-nav .nav ul #menu{
+  display: none;
+}
+
+header .main-nav svg{
+  fill: rgb(165, 160, 160);
+}
+
+
+a:hover{
+  background-color: rgba(85, 81, 94, 0.4);
+  border-radius: 5px;
+}
+
+header .sidebar{
+  display: none;
+  height: 100vh;
+  width: 35%;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  background-color: rgba(247, 242, 242, 0.8);
+  box-shadow: 10px 0px 10px rgba(0,0,0,0.1);
+  z-index: 9999;
+}
+
+header .sidebar .nav ul{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  justify-content: flex-end;
+  margin: 10px 0px 0px 30px;
+}
+
+header .sidebar .nav ul li{
+  padding: 10px 0px;
+}
+
+header .sidebar a{
+  text-decoration: none;
+  color: rgb(36, 34, 34);
+}
+
+header .sidebar a svg{
+  text-decoration: none;
+  fill: rgb(36, 34, 34);
+}
+
+
+/* Navigation Part styling start here............................................................ */
+
+
+
+
+/* Main Part styling start here............................................................ */
+/* main{
+  
+} */
+
+main .home{
+  width: 100%;
+  height: 100vh;
+
+  background-image: url('../images/background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 65px;
+}
+
+main .home .title{
+  font-size: 2.6rem;
+}
+
+main .home .info{
+  font-size: 5.5rem;
+}
+
+main .home .txt{
+  background-color: rgba(255, 255, 255, 0.0);
+}
+
+main .home .info .span1{
+  color: rgb(221, 43, 43);
+  background-color: rgba(255, 255, 255, 0.0);
+}
+
+main .home .info .span2{
+  color:aquamarine;
+  letter-spacing: 0.8rem;
+  background-color: rgba(255, 255, 255, 0.0);
+}
+
+main .home .home-txt{
+  margin-left: 10%;
+}
+
+
+
+
+
+
+
+
+
+/* Responsive Part styling start here............................................................ */
+
+
+@media screen and (max-width:768px){
+  header .main-nav .nav ul #menu{
+    display: flex;
+  }
+
+  header .main-nav .nav ul .nav-list{
+    display: none;
+  }
+
+  main .home .title{
+    font-size: 2rem;
+  }
+  
+  main .home .info{
+    font-size: 4.1rem;
+  }
+}
+
+@media screen and (max-width:600px){
+  header .sidebar{
+    width: 100%;
+    justify-content: center;
+  }
+
+  main .home .title{
+    font-size: 1.5rem;
+  }
+  
+  main .home .info{
+    font-size: 2.8rem;
+  }
+  
+}
